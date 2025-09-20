@@ -1,0 +1,94 @@
+.product-info {
+  padding: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.product-info h1,
+.product-info h2 {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  margin-bottom: 60px;
+}
+
+.info-card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  padding: 25px;
+  text-align: center;
+  transition: 0.4s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-8px);
+}
+
+.icon {
+  font-size: 50px;
+  margin-bottom: 18px;
+}
+
+.benefit {
+  border-left: 6px solid #27ae60;
+  background: linear-gradient(135deg, #d4fce2, #f0fff7);
+}
+
+.harm {
+  border-left: 6px solid #e74c3c;
+  background: linear-gradient(135deg, #fde2e2, #fff4f4);
+}
+
+.progress {
+  margin: 20px 0;
+}
+
+.label {
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.bar {
+  background: #eee;
+  height: 12px;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.good-bar {
+  background: #27ae60;
+  height: 100%;
+  transition: width 0.6s ease;
+}
+
+.bad-bar {
+  background: #e74c3c;
+  height: 100%;
+  transition: width 0.6s ease;
+}
+
+.indicator {
+  margin: 15px 0;
+}
+
+.indicator span {
+  display: inline-block;
+  margin: 4px;
+  padding: 6px 12px;
+  border-radius: 12px;
+  font-size: 13px;
+  background: #eee;
+}
+
+@media (max-width: 768px) {
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+}

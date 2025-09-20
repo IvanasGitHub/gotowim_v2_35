@@ -1,0 +1,151 @@
+/* Общие стили для карточек рецептов */
+.recipe-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  /* margin-top: 20px; */
+}
+
+.recipe-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.recipe-link {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.recipe-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+}
+
+.recipe-card:hover .recipe-image {
+  opacity: 0.8;
+}
+
+.recipe-content {
+  padding: 20px;
+  flex: 1;
+}
+
+.recipe-title {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.recipe-description {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.recipe-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #f7f7f7;
+}
+
+.recipe-category {
+  background-color: #e0e0e0;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  color: #333;
+}
+
+.rating {
+  font-size: 0.9rem;
+  color: #ff9800;
+}
+
+.like-button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 1.3rem;
+  color: #e53935;
+  transition: color 0.3s ease;
+}
+
+.like-button:hover {
+  color: #c62828;
+}
+
+/* Стили для сетки карточек */
+.recipe-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+/* Пагинация */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+  padding-bottom: 25px;
+  gap: 15px; /* Добавляет пространство между кнопками */
+}
+
+.pagination button {
+  background-color: #4caf50; /* Основной цвет: мягкий зелёный */
+  color: #ffffff; /* Цвет текста */
+  border: none;
+  border-radius: 50px; /* Скругленные углы */
+  padding: 10px 30px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Легкая тень */
+}
+
+.pagination button:disabled {
+  background-color: #b2dfdb; /* Светлый зелёный для неактивных кнопок */
+  color: #4caf50; /* Цвет текста для неактивных кнопок */
+  cursor: not-allowed;
+  box-shadow: none; /* Убирает тень для неактивных кнопок */
+}
+
+.pagination button:hover:not(:disabled) {
+  background-color: #388e3c; /* Темный оттенок зелёного при наведении */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Усиленная тень при наведении */
+}
+
+.pagination span {
+  font-size: 1rem;
+  color: #333; /* Цвет текста для номера страницы */
+}
+
+/* Стили для активной страницы */
+.pagination .active {
+  background-color: #ffffff; /* Фоновый цвет для активной страницы */
+  color: #4caf50; /* Цвет текста активной страницы */
+  border: 2px solid #4caf50; /* Рамка вокруг активной страницы */
+}
+
+h1 {
+  width: 100%;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}

@@ -1,0 +1,54 @@
+.top-nav {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  line-height: 50px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  min-width: 320px; /* Минимальная ширина для топ-меню */
+}
+
+.nav-links {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.burger-menu {
+  display: none; /* Hide by default */
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.line {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+}
+
+@media (min-width: 769px) {
+  .burger-menu {
+    display: none; /* Hide the burger menu on larger screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .burger-menu {
+    display: flex; /* Show the burger menu on smaller screens */
+  }
+}

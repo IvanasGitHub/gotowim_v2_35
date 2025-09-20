@@ -1,0 +1,63 @@
+/* Nav.css */
+* {
+  font-family: "Dancing Script", cursive;
+}
+.side-nav {
+  width: 250px;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.side-nav.active {
+  transform: translateX(0);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 15px;
+}
+
+li > div {
+  cursor: pointer;
+  font-weight: bold;
+  color: #fff;
+  transition: color 0.3s ease;
+  margin-bottom: 15px;
+}
+
+li > div:hover {
+  color: #007bff;
+}
+
+.sub-nav {
+  display: none;
+  padding-left: 15px;
+}
+
+.sub-nav.active {
+  display: block;
+}
+
+.sub-nav li {
+  margin-bottom: 10px;
+}
+
+.sub-nav a {
+  text-decoration: none;
+  color: #ccc;
+}
+
+.sub-nav a:hover {
+  color: #fff;
+}
+h2 {
+  margin-bottom: 35px;
+  color: white;
+}

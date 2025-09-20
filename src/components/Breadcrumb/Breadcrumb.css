@@ -1,0 +1,62 @@
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap; /* Позволяет элементам переноситься на новую строку */
+  align-items: center;
+  font-size: 1rem; /* Размер шрифта, масштабируемый с использованием rem */
+  padding: 8px 16px;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  list-style: none;
+  color: #333;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  min-width: 320px; /* Минимальная ширина для хлебных крошек */
+}
+
+.breadcrumb-link,
+.breadcrumb-item {
+  color: #333;
+  text-decoration: none;
+  padding: 0 8px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  overflow: hidden; /* Прячет текст, выходящий за пределы */
+  text-overflow: ellipsis; /* Добавляет многоточие, если текст обрезается */
+  white-space: nowrap; /* Не позволяет переносить текст на новую строку */
+  margin-bottom: 4px; /* Нижний отступ для элементов, чтобы добавить пространство между строками */
+}
+
+.breadcrumb-link:hover {
+  color: #555;
+}
+
+.breadcrumb-item {
+  color: #6c757d;
+}
+
+.breadcrumb-item.active {
+  font-weight: bold;
+  color: #000;
+}
+
+.breadcrumb-separator {
+  margin: 0 8px;
+  color: #26af42;
+}
+
+.breadcrumb-icon {
+  margin-right: 4px;
+}
+
+/* Адаптивный размер шрифта для более узких экранов */
+@media (max-width: 768px) {
+  .breadcrumb {
+    font-size: 0.875rem; /* Уменьшение размера шрифта для мобильных экранов */
+  }
+}
+
+@media (max-width: 480px) {
+  .breadcrumb {
+    font-size: 0.75rem; /* Еще большее уменьшение размера шрифта для узких экранов */
+  }
+}

@@ -1,0 +1,68 @@
+.popular-categories-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden; /* Убираем полосу прокрутки */
+}
+
+.categories-scroll {
+  display: flex;
+  overflow-x: hidden; /* Убираем полосу прокрутки */
+  scroll-behavior: smooth;
+  padding: 10px;
+  white-space: nowrap;
+}
+
+.category-button {
+  background: #f0f0f0;
+  border: none;
+  border-radius: 30px;
+  padding: 5px;
+  margin: 10px;
+  display: inline-block;
+  align-items: center;
+  cursor: pointer;
+  transition: background 0.3s;
+  white-space: normal;
+}
+
+.category-button:hover {
+  background: #e0e0e0;
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+.scroll-button {
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.scroll-button.left {
+  left: 10px;
+}
+
+.scroll-button.right {
+  right: 10px;
+}
+
+.scroll-button:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.scroll-button:focus {
+  outline: none;
+}
